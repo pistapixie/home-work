@@ -1,11 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EDIYA</title>
+  <title>EDIYA-login</title>
+  <link rel="stylesheet" href="./mission-02.css">
+  <!-- <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css' rel='stylesheet' type='text/css'> -->
 </head>
 <body>
-  
+  <div class="login-group">
+    <div class="upper-login-text-container">
+      <h2 class="login-title">로그인</h2>
+      <p lang="en" class="welcome-en"> Welcome, Ediya Coffee</p>
+      <p class="welcome-ko">이디야커피에 오신 것을 환영합니다.</p>
+    </div>
+    <form action="/" class="login-form" method="get">
+      <fieldset class="reset-box">
+        <legend>회원 로그인 폼</legend>
+        <div class="user-email">
+          <label for="userEmail">이메일</label>
+          <input
+            type="email"
+            id="userEmail"
+            placeholder="yamoo9@euid.dev"
+            required
+            name="userEmail"
+          />
+        </div>
+        <div class="user-pwd">
+          <label for="userPwd">패스워드</label>
+          <input
+            type="password"
+            id="userPwd"
+            required
+            name="userPwd"
+            minlength="6"
+          />
+        </div>
+        <input type="checkbox" name="save-email" value="yes"> 
+        <label for="save-email">이메일 저장</label>
+
+      </fieldset>
+
+      <div class="sign-in-up-container">
+        <button class="sign-in " type="submit">로그인</button>
+        <a href="/" class="sign-up " aria-label="회원가입 페이지로 이동">회원가입</a>
+      </div>
+    </form>
+    
+    
+      
+    
+  </div>
 </body>
 </html>
