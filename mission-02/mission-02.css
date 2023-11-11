@@ -53,6 +53,7 @@ legend {
   flex-direction: column;
   justify-content: center;
   color: #FEFEFE;
+  
 }
 
 
@@ -69,7 +70,7 @@ legend {
   align-items: center;
   justify-content: center;
   line-height: normal;
-  
+  margin-top:-150px;
 }
 /* 로그인 헤드라인*/
 .login-title{
@@ -146,6 +147,13 @@ label[for="save-email"] {
   font-weight: 700;
   margin-top: 100px;
 }
+.arrow{
+  position: absolute;
+  right: 20px;
+  width: 18px;
+  height: 18px;
+  
+}
 /* 로그인 버튼 */
 .btn-sign-in{
   display: flex;
@@ -156,8 +164,11 @@ label[for="save-email"] {
   border-radius: 8px;
   width: 260px;
   height: 48px;
+  color:#D2C9B6;
   font-weight: 700;
-  color: #24388D;
+  opacity: 80%;
+  position: relative;
+  /* color: #24388D; */
 }
 /* 회원가입 버튼 */
 .btn-sign-up{
@@ -171,6 +182,7 @@ label[for="save-email"] {
   height: 48px;
   color: #F5F5F5;
   text-decoration: none;
+  position: relative;
 }
 
 
