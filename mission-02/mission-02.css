@@ -3,7 +3,7 @@
 @import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
 body {
     font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; 
-    font-style: normal;
+    
 }
 
 
@@ -40,7 +40,9 @@ legend {
 }
 
 .login-group{
-  background-image: url('./image/커피\ bg이미지.png');
+  background-image: url('./image/bg-coffee.png');
+  background-position: 25% 75%; 
+  background-repeat: no-repeat;
   background-size: cover;
   display: block;
   width: 100%;
@@ -48,15 +50,17 @@ legend {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
   color: #FEFEFE;
 }
 
-.login-group{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 
+/* 미디어 쿼리를 사용하여 작은 화면일 때 추가적인 스타일 적용 */
+@media screen and (max-width: 600px) {
+  .login-group {
+    background-image: left 50px no-repeat; /* 가로 중앙, 세로 상단에서 50픽셀 아래로 위치 변경 */
+  }
 }
 
 .upper-login-text-container{
@@ -67,7 +71,7 @@ legend {
   line-height: normal;
   
 }
-
+/* 로그인 헤드라인*/
 .login-title{
   font-size: 36px;
   font-weight: 300;
@@ -86,27 +90,30 @@ legend {
   font-weight: 400;
   letter-spacing: -0.24px;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
-
-
+/* 이메일, 패스워드 입력 폼 */
 input{
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #FEFEFE;
-  
 }
-
+/* 이메일 입력 */
 .user-email{
   position: relative;
 }
 .user-email input{
   width: 540px;
   height: 70px;
+  color: #FEFEFE;
+}
+.user-email input[type="email"]::placeholder {
+  color: rgba(254, 254, 254, 0.70);
 }
 .user-email label{
   position: absolute;
 }
+/* 패스워드 입력 */
 .user-pwd{
   position: relative;
 }
@@ -117,18 +124,29 @@ input{
 .user-pwd label{
   position: absolute;
 }
-
-.sign-in-up-container{
-  display: flex;
+.user-pwd input[type="password"] {
+  color: #FEFEFE;
+  content: ;
+}
+/* 이메일 저장 체크박스 */
+input[type="checkbox"],
+label[for="save-email"] {
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.24px;
+  margin-left: 4px;
 }
 
+/* 버튼 */
 .sign-in-up-container{
+  display: flex;
   gap: 20px;
   font-size: 17px;
   font-weight: 700;
   margin-top: 100px;
-  
 }
+/* 로그인 버튼 */
 .btn-sign-in{
   display: flex;
   justify-content: center;
@@ -140,9 +158,8 @@ input{
   height: 48px;
   font-weight: 700;
   color: #24388D;
-  
-  
 }
+/* 회원가입 버튼 */
 .btn-sign-up{
   display: flex;
   justify-content: center;
@@ -158,7 +175,17 @@ input{
 
 
 @media screen and (max-width: 600px) {
-  .bsign-in-up-container {
-    flex-direction: column; /* 세로 방향으로 배치 */
+
+  .sign-in-up-container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
+  .user-email input, .user-pwd input{
+    width: 311px;
+  }
+
+  
 }
