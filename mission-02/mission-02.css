@@ -1,3 +1,4 @@
+/* 모던 리셋 */
 @import './reset.css';
 /*폰트*/
 @import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
@@ -5,33 +6,14 @@ body {
     font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; 
 }
 
-
-/* 숨김 콘텐츠 */
-.sr-only,
-legend {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-.reset-box {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
 .login-group{
   background-image: url('./image/bg-coffee.png');
   background-position: 25% 75%; 
   background-repeat: no-repeat;
   background-size: cover;
-  display: block;
   width: 100%;
   height: 100vh;
+  display: block;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -40,7 +22,7 @@ legend {
   color: #FEFEFE; 
 }
 
-.upper-login-text-container{
+.login-text-group{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,7 +30,6 @@ legend {
   line-height: normal;
   margin-top:-150px;
 }
-/* 로그인 헤드라인*/
 .login-title{
   font-size: 36px;
   font-weight: 300;
@@ -68,6 +49,25 @@ legend {
   letter-spacing: -0.24px;
   margin-top: 0;
   margin-bottom: 100px;
+}
+
+/* 숨김 콘텐츠 */
+.sr-only,
+legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+.input-group {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 /* 이메일, 패스워드 입력 폼 */
 input{
@@ -99,13 +99,11 @@ input{
 .user-pwd input{
   width: 540px;
   height: 70px;
+  color: #FEFEFE;
 }
 .user-pwd label{
   position: absolute;
-  top: 15px;
-}
-.user-pwd input[type="password"] {
-  color: #FEFEFE;
+  top: 10px;
 }
 /* 이메일 저장 체크박스 */
 input[type="checkbox"],
@@ -117,7 +115,7 @@ label[for="save-email"] {
   margin-left: 4px;
 }
 /* 버튼 */
-.sign-in-up-container{
+.login-join-group{
   display: flex;
   gap: 20px;
   font-size: 17px;
@@ -131,7 +129,7 @@ label[for="save-email"] {
   height: 18px;
 }
 /* 로그인 버튼 */
-.btn-sign-in{
+.btn-login{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,7 +145,7 @@ label[for="save-email"] {
   /* color: #24388D; */
 }
 /* 회원가입 버튼 */
-.btn-sign-up{
+.btn-join{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,7 +162,7 @@ label[for="save-email"] {
 
 @media screen and (max-width: 600px) {
 
-  .sign-in-up-container {
+  .login-join-group {
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -174,7 +172,7 @@ label[for="save-email"] {
   .user-email input, .user-pwd input{
     width: 311px;
   }
-  .btn-sign-in, .btn-sign-up{
+  .btn-login, .btn-join{
     width: 311px;
   }
 }
