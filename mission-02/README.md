@@ -22,7 +22,6 @@
   -이메일 및 패스워드 input 요소의 width가 540px->311px로 바뀜.
   -로그인 button 및 회원가입 anchor의 260px->311px로 바뀜.
 
-  ![Demo GIF](./rwd-video.gif)
 
 
 
