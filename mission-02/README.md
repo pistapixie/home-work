@@ -19,6 +19,10 @@
   -이메일 및 패스워드 input 요소의 width가 540px->311px로 바뀜.<br>
   -로그인 button 및 회원가입 anchor의 260px->311px로 바뀜.
 <img src="./readme-img/@media.png" width="500px">
+<br>반응형 웹 디자인 gif<br>
+
+https://github.com/nessaleee/home-work/assets/144419094/75f03914-569b-4f2d-b5da-dfb52c522a30
+
   
 
 
