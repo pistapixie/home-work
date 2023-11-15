@@ -1,58 +1,66 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EDIYA-login</title>
-  <link rel="stylesheet" href="./mission-02.css">
-  
-</head>
-<body>
-  <div class="login-group">
-    <div class="login-text-group">
-      <h2 class="login-title">로그인</h2>
-      <p lang="en" class="welcome-en"> Welcome, Ediya Coffee</p>
-      <p class="welcome-ko">이디야커피에 오신 것을 환영합니다.</p>
-    </div>
-    <form action="/" class="login-form" method="post">
-      <fieldset class="input-group">
-        <legend>회원 로그인 폼</legend>
-        <div class="user-email">
-          <label for="userEmail">이메일</label>
-          <input
-            type="email"
-            id="userEmail"
-            placeholder="yamoo9@euid.dev"
-            required
-            name="userEmail"
-          />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EDIYA-login</title>
+    <link rel="stylesheet" href="./mission-02.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="login-group">
+        <div class="login-text-group">
+          <h2 class="login-title">로그인</h2>
+          <p lang="en" class="welcome-en">Welcome, Ediya Coffee</p>
+          <p class="welcome-ko">이디야커피에 오신 것을 환영합니다.</p>
         </div>
-        <div class="user-pwd">
-          <label for="userPwd">패스워드</label>
-          <input
-            type="password"
-            id="userPwd"
-            required
-            name="userPwd"
-            minlength="6"
-          />
-        </div>
-        <input type="checkbox" name="save-email" id="save-email" > 
-        <label for="save-email">이메일 저장</label>
-      </fieldset>
+        <form action="/" class="login-form" method="post">
+          <fieldset class="input-group">
+            <legend>회원 로그인 폼</legend>
 
-      <div class="login-join-group">
-        <button class="btn-login " type="submit">
-          로그인 
-          <img class="arrow" src="./image/arrow-t.svg" alt="" > 
-        </button>
-        <a href="/" class="btn-join " aria-label="회원가입 페이지로 이동">
-          회원가입
-          <img class="arrow" src="./image/arrow-t.svg" alt="">
-        </a>
+            <div class="user-email">
+              <label for="userEmail">이메일</label>
+              <input
+                type="email"
+                id="userEmail"
+                placeholder="yamoo9@euid.dev"
+                required
+                name="userEmail"
+              />
+              <span class="valid validID" id="ID-checked">
+                <img src="./image/login-icon/checked.svg" />
+              </span>
+              <p class="error-message">
+                이메일 입력 방법이 잘못되었습니다. (예:user@domain.io)
+              </p>
+            </div>
+
+            <div class="user-pwd">
+              <label for="userPwd">패스워드</label>
+              <input
+                type="password"
+                id="userPwd"
+                required
+                name="userPwd"
+                minlength="6"
+              />
+            </div>
+            <input type="checkbox" name="save-email" id="save-email" />
+            <label for="save-email">이메일 저장</label>
+          </fieldset>
+
+          <div class="login-join-group">
+            <button class="btn-login" type="submit">
+              로그인
+              <img class="arrow" src="./image/arrow-t.svg" alt="" />
+            </button>
+            <a href="/" class="btn-join" aria-label="회원가입 페이지로 이동">
+              회원가입
+              <img class="arrow" src="./image/arrow-t.svg" alt="" />
+            </a>
+          </div>
+        </form>
       </div>
-    </form>
-    
-  </div>
-</body>
+    </main>
+  </body>
 </html>
