@@ -1,0 +1,61 @@
+/* 컴포넌트 컨테이너 */
+.component-container {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 1rem;
+  padding: 2rem;
+}
+
+/* 모바일 디바이스 */
+@media (max-width: 768px) {
+  .navigation {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 3.125rem auto;
+    background: hsla(225, 57%, 10%, 0.85);
+    color: #fff;
+    transition: all 400ms ease-in-out;
+    backdrop-filter: blur(4px);
+    /* 임시로 지정 추후 삭제 요망 .....*/
+    display: none;
+  }
+
+  .navigation ul {
+    margin: 0 var(--spacing-xl);
+    padding: 3.5rem 0;
+  }
+
+  .navigation li {
+    border-top: 1px solid hsla(225, 57%, 30%, 0.5);
+  }
+
+  .navigation a {
+    display: block;
+    padding: var(--spacing-md);
+    margin: 0 -20px;
+  }
+
+  .navigation a:hover,
+  .navigation a:focus {
+    background: var(--primary-blue-2);
+  }
+
+  .navigation .button-close {
+    grid-area: 1/1/2/2;
+    justify-self: end;
+  }
+}
+
+/* 데스크탑 디바이스 */
+@media (min-width: 768px) {
+  .navigation ul {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: var(--spacing-sm);
+    color: var(--primary-blue-1);
+  }
+
+  .navigation .button-close {
+    display: none;
+  }
+}

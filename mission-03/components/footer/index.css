@@ -1,0 +1,61 @@
+/* 푸터 컴포넌트 */
+.footer {
+  background: var(--grayscale-black);
+  color: var(--grayscale-light-gray);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  letter-spacing: -0.015em;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+}
+
+.footer-inner {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 1.67em;
+}
+
+[class*='footer-wrapper'] {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.footer-wrapper-1 {
+  border-bottom: 1px solid rgba(97, 97, 97, 0.5);
+  padding-bottom: 1.67em;
+}
+
+.guide {
+  /* background: orange; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  column-gap: 1.125em;
+}
+
+.address {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+}
+
+@media (max-width: 768px) {
+  .address {
+  }
+}
+
+@media (min-width: 768px) {
+  .guide {
+    flex-wrap: nowrap;
+  }
+
+  .address {
+    flex-flow: row wrap;
+    width: clamp(610px, 80%, 800px);
+  }
+}

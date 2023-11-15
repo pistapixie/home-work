@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로고 - 브랜드 이미지</title>
+    <!-- 웹폰트 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="logo-container">
+      <!-- 1. Light 모드 로고 -->
+      <div class="logo-wrapper">
+        <a href="/views/home.html" class="logo-link light-logo">
+          <img src="/images/brand.svg" alt="EDIYA COFFEE" />
+        </a>
+      </div>
+
+      <!-- 2. Dark 모드 로고 -->
+      <div class="logo-wrapper">
+        <a href="/views/home.html" class="logo-link dark-logo">
+          <img src="/images/brand-white.svg" alt="EDIYA COFFEE" />
+        </a>
+      </div>
+
+      <!-- 3. Mono 로고 -->
+      <div class="logo-wrapper">
+        <figure class="logo-figure mono-logo">
+          <img src="/images/brand-dark.svg" alt="EDIYA COFFEE" />
+        </figure>
+      </div>
+
+      <!-- 2. Normal 로고 (figure - 배경이미지) -->
+      <div class="logo-wrapper">
+        <a href="/views/home.html" class="logo-link">
+          <figure role="img" class="logo-img"></figure>
+        </a>
+      </div>
+
+      <div class="logo-wrapper school">LikeLion &amp; EUID</div>
+    </div>
+  </body>
+</html>
