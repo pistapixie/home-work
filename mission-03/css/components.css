@@ -1,5 +1,5 @@
 /* 로고 스타일 */
-@import '/components/logo/index.css';
+@import './../components/logo/index.css';
 @import '/components/buttons/index.css';
 @import '/components/navigation/index.css';
 @import '/components/header/index.css';
