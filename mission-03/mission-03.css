@@ -62,6 +62,7 @@ form{
   align-items: center;
 }
 .form-input-wrapper {
+  display: flex;
   border: none;
   padding: 0;
   margin: 0;
@@ -88,7 +89,6 @@ form{
 
   pointer-events: none;
 }
-
 
 #get-started:focus + .form-input-label,
 #get-started:valid + .form-input-label
@@ -118,7 +118,47 @@ form{
   background-repeat: no-repeat;
   background-position: right 20px bottom 20px;
   color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 120%;
   width: 210px;
   height: 60px;
   padding: 17px 52px 17px 20px;
+}
+@media(max-width:600px){
+  .header-main{
+    background-image: 
+    linear-gradient(to top, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 1) 100%),
+    url(./images/background-mobile.jpg);
+  }
+  .form-input-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+  }
+  #get-started{
+    width: 245px;
+    height: 40px;
+    border-radius: 30px;
+    
+  }
+  .form-input-label{
+    font-size: 14px;
+  }
+  .button-signup{
+    width:160px;
+    height: 40px;
+    font-size: 14px;
+    border-radius: 30px;
+  }
+}
+@media(max-width:900px){
+  #get-started{
+    width: 380px;
+  }
+  .button-signup{
+    width:175px;
+    font-size: 16px;
+  }
 }
