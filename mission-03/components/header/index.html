@@ -11,15 +11,16 @@
       <div class="header-inner">
         <h1 class="brand">
           <a href="./mission-03.html" class="logo-link light-logo">
-            <img src="./images/Logo.svg" alt="Netflix" />
+            <img src="./../../images/icon/Logo.svg" alt="Netflix" />
           </a>
         </h1>
-        <select id="lang-select" onchange="changeLanguage()">
-          <option value="ko">한국어</option>
-          <option value="en">English</option>
-        </select>
-
-        <a href="/" class="link-signup button-stroke">로그인</a>
+        <div class="select-signIn">
+          <select id="lang-select" name="language-select">
+            <option selected lang="ko" label="한국어" value="ko">한국어</option>
+            <option lang="en" label="English" value="en">English</option>
+          </select>
+          <a href="/" class="link-signIn">로그인</a>
+        </div>
       </div>
     </header>
   </body>
