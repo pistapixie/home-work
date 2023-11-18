@@ -4,12 +4,10 @@
   background-color: transparent;
   border-radius: 2px;
   border: 1px solid var(--gray-500, #757575);
-  margin: 10px 0;
   appearance: none;
-  padding: 12px 10px;
+  padding: 10px;
   display: inline-flex;
   text-align: center;
-  /* gap: 8px; */
   color: var(--gray-500, #757575);
   font-size: 15px;
   font-weight: 400;
@@ -17,4 +15,10 @@
   background-image: url(./../../images/icon/select-global.svg), url(./../../images/icon/select-down-fill.svg);
   background-repeat: no-repeat;
   background-position: left 10px bottom 10px, right 10px bottom 10px;
+}
+@media(max-width: 600px){
+  #lang-select{
+    width: 100px;
+    margin-left: 10px;
+  }
 }
