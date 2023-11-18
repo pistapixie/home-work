@@ -1,9 +1,4 @@
-/* 로고 스타일 */
-@import './../components/logo/index.css';
-@import '/components/buttons/index.css';
-@import '/components/navigation/index.css';
+/* @import '/components/buttons/index.css'; */
 @import '/components/header/index.css';
 @import '/components/footer/index.css';
-@import '/components/template/index.css';
-@import '/components/new-menu/index.css';
 @import '/components/form/index.css';

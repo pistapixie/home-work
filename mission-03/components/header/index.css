@@ -2,21 +2,43 @@
 .header .brand {
   font-size: 1em;
   line-height: 1;
+  width: 140px;
+  height: 38px;
 }
 
 .header {
-  background: rgba(255, 255, 255, 0.95);
+  /* background-color: rgba(240, 128, 128, 0.5); */
+  background: transparent;
 }
 
 .header-inner {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   height: 3.125em;
 }
+.link-signup{
+  display: flex;
+  width: 70px;
+  height: 40px;
+  padding: 12px 10px;
+  border-radius: 4px;
+  background: var(--red-500, #E50914);
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.008px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 
-@media (max-width: 768px) {
+
+/* @media (max-width: 768px) {
   .header {
     padding-left: 18px;
   }
@@ -52,4 +74,4 @@
   .navigation .button-close {
     display: none;
   }
-}
+} */
