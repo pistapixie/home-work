@@ -56,8 +56,24 @@ main > h3{
   line-height: 150%; /* 24px */
   letter-spacing: -0.008px;
 }
-
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#get-started{
+  width: 540px;
+  height: 60px;
+}
+.form-input-label{
+  color: var(--gray-500, #757575);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.008px;
+}
 .button-signup{
+  border: none;
   background: red;
   background-image: url(./images/icon/button-arrow.svg);
   background-repeat: no-repeat;
