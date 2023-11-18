@@ -57,7 +57,13 @@ main > h3{
   letter-spacing: -0.008px;
 }
 
-.button-signin{
+.button-signup{
   background: red;
+  background-image: url(./images/icon/button-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px bottom 20px;
   color: #FFF;
+  width: 210px;
+  height: 60px;
+  padding: 17px 52px 17px 20px;
 }
