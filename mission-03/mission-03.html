@@ -35,13 +35,17 @@
           재시작하려면 이메일 주소를 입력하세요.
         </h3>
         <form action="/submit_email" method="post">
-          <label for="get-started" class="form-input-label">이메일 주소</label>
-          <input
-            type="email"
-            id="get-started"
-            pattern="[a-z0-9._]+@[a-z]+\.[a-z]$"
-            required
-          />
+          <div class="form-input-wrapper">
+            <label for="get-started" class="form-input-label"
+              >이메일 주소</label
+            >
+            <input
+              type="email"
+              id="get-started"
+              pattern="[a-z0-9._]+@[a-z]+\.[a-z]$"
+              required
+            />
+          </div>
           <span hidden class="feedback">
             정확한 이메일 주소를 입력하세요.
           </span>
