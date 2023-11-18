@@ -71,14 +71,31 @@ form{
 .form-input-label{
   position: absolute;
   top: 50%;
-  left: 10px; /* 레이블을 입력 필드의 좌측에 위치하도록 조정 */
+  left: 20px; /*레이블을 입력 필드의 좌측에 위치하도록 조정*/
   transform: translateY(-50%);
+  pointer-events: none;
+  transition: all 0.3s ease;
   color: var(--gray-500, #757575);
   font-size: 16px;
   font-weight: 400;
   line-height: 150%; /* 24px */
   letter-spacing: -0.008px;
 }
+
+#get-started:focus + .form-input-label,
+#get-started:valid + .form-input-label {
+  font-size: 12px;
+  color: var(--red-500, #E50914);
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.006px;
+  transform: translateY(-130%);
+}
+
+
+
+
+
 .button-signup{
   border: none;
   background: red;
