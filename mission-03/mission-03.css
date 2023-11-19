@@ -1,7 +1,6 @@
 body{
   background-color: black;
 }
-
 .header-main{
   background-image: 
     linear-gradient(to top, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 1) 100%),
@@ -9,8 +8,6 @@ body{
   width: 100%;
   background-size: cover;
 }
-
-
 main{
   display: flex;
   flex-flow: column nowrap;
@@ -20,7 +17,6 @@ main{
   padding: 57px;
   margin-top: 40px;
   margin-bottom: 147px;
-
 }
 main > h2{
   color: var(--White, #FFF);
@@ -34,10 +30,8 @@ main > h2{
 }
 main > p {
   color: var(--White, #FFF);
-  text-align: justify;
-  /* Text Shadow (Paragraph) */
+  text-align: center;
   text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.55);
-  /* Text/x-large (bold) */
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -46,10 +40,8 @@ main > p {
 }
 main > h3{
   color: var(--White, #FFF);
-  text-align: justify;
-  /* Text Shadow (Paragraph) */
+  text-align: center;
   text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.55);
-  /* Text/normal (bold) */
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -58,11 +50,11 @@ main > h3{
 }
 form{
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .form-input-wrapper {
   display: flex;
+  justify-items : center;
+  align-items: center;
   border: none;
   padding: 0;
   margin: 0;
@@ -77,7 +69,7 @@ form{
 .form-input-label{
   position: absolute;
   top: 50%;
-  left: 20px; /*레이블을 입력 필드의 좌측에 위치하도록 조정*/
+  left: 20px; 
   transform: translateY(-50%);
   pointer-events: none;
   transition: all 0.3s ease;
@@ -86,12 +78,9 @@ form{
   font-weight: 400;
   line-height: 150%; /* 24px */
   letter-spacing: -0.008px;
-
   pointer-events: none;
 }
-
-#get-started:focus + .form-input-label,
-#get-started:valid + .form-input-label
+#get-started:focus + .form-input-label
  {
   font-size: 12px;
   color: var(--red-500, #E50914);
@@ -100,17 +89,42 @@ form{
   letter-spacing: -0.006px;
   transform: translateY(-130%);
 }
-
 .feedback {
+  display: block;
   display: none;
+  font-size: 12px;
+  color: var(--red-500, #E50914);
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.007px;
+  position: absolute;
+  top: 65px;
+  left: 15px;
+}
+/* 유효하지 않은 경우의 스타일 */
+.form-input.invalid {
+  border-bottom: 2px solid #E50914;
+}
+
+/* 유효하지 않은 경우의 레이블 스타일 */
+.form-input.invalid + .form-input-label {
+  font-size: 12px;
+  color: var(--red-500, #E50914);
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.006px;
+  transform: translateY(-130%);
+}
+
+/* 유효하지 않은 경우의 피드백(에러 메시지) 스타일 */
+.form-input.invalid + .feedback{
+  display: block;
   color: var(--red-500, #E50914);
   font-size: 12px;
   font-weight: 700;
   line-height: 150%;
   letter-spacing: -0.007px;
-  margin-top: 5px;
 }
-
 .button-signup{
   border: none;
   background: red;
@@ -141,7 +155,6 @@ form{
     width: 245px;
     height: 40px;
     border-radius: 30px;
-    
   }
   .form-input-label{
     font-size: 14px;
