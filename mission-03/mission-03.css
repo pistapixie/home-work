@@ -22,7 +22,7 @@ main > h2{
   color: var(--White, #FFF);
   text-align: center;
   /* Title/2x-large */
-  font-size: 60px;
+  font-size: var(--title--2x-large);
   font-style: normal;
   font-weight: 700;
   line-height: 120%; /* 72px */
@@ -32,7 +32,7 @@ main > p {
   color: var(--White, #FFF);
   text-align: center;
   text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.55);
-  font-size: 20px;
+  font-size: var(--text--x-large);
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 30px */
@@ -42,7 +42,7 @@ main > h3{
   color: var(--White, #FFF);
   text-align: center;
   text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.55);
-  font-size: 16px;
+  font-size: var(--text--normal);
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 24px */
@@ -70,7 +70,7 @@ form{
   transform: translateY(-50%);
   transition: all 0.3s ease;
   color: var(--gray-500, #757575);
-  font-size: 16px;
+  font-size: var(--text--normal);
   font-weight: 400;
   line-height: 150%; /* 24px */
   letter-spacing: -0.008px;
@@ -78,7 +78,7 @@ form{
 }
 #get-started:focus + .form-input-label
  {
-  font-size: 12px;
+  font-size: var(--text--x-small);
   color: var(--red-500, #E50914);
   font-weight: 700;
   line-height: 150%;
@@ -88,7 +88,7 @@ form{
 .feedback {
   display: block;
   display: none;
-  font-size: 12px;
+  font-size: var(--text--x-small);
   color: var(--red-500, #E50914);
   font-weight: 700;
   line-height: 150%;
@@ -103,7 +103,7 @@ form{
 }
 /* 유효하지 않은 경우의 레이블 스타일 */
 .form-input.invalid + .form-input-label {
-  font-size: 12px;
+  font-size: var(--text--x-small);
   color: var(--red-500, #E50914);
   font-weight: 700;
   line-height: 150%;
@@ -114,7 +114,7 @@ form{
 .form-input.invalid + .feedback{
   display: block;
   color: var(--red-500, #E50914);
-  font-size: 12px;
+  font-size: var(--text--x-small);
   font-weight: 700;
   line-height: 150%;
   letter-spacing: -0.007px;
@@ -126,7 +126,7 @@ form{
   background-repeat: no-repeat;
   background-position: right 20px bottom 20px;
   color: #FFF;
-  font-size: 20px;
+  font-size: var(--text--x-large);
   font-weight: 700;
   line-height: 120%;
   width: 210px;
@@ -151,15 +151,15 @@ form{
     border-radius: 30px;
   }
   .form-input-label{
-    font-size: 14px;
+    font-size: var(--text--small);
   }
   .form-input.invalid + .form-input-label {
-    transform: translateY(-100%);
+    transform: translateY(-80%);
   }
   .button-signup{
     width:160px;
     height: 40px;
-    font-size: 14px;
+    font-size: var(--text--small);
     border-radius: 30px;
     background-position: right 20px bottom 10px;
     padding: 12px 45px 10px 20px
@@ -171,6 +171,6 @@ form{
   }
   .button-signup{
     width:175px;
-    font-size: 16px;
+    font-size: var(--text--normal-bold);
   }
 }
