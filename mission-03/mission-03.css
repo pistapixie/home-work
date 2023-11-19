@@ -52,9 +52,6 @@ form{
   display: flex;
 }
 .form-input-wrapper {
-  /* display: flex; */
-  /* justify-items : center;
-  align-items: center; */
   border: none;
   padding: 0;
   margin: 0;
@@ -71,7 +68,6 @@ form{
   top: 50%;
   left: 20px; 
   transform: translateY(-50%);
-  pointer-events: none;
   transition: all 0.3s ease;
   color: var(--gray-500, #757575);
   font-size: 16px;
@@ -105,7 +101,6 @@ form{
 .form-input.invalid {
   border-bottom: 2px solid #E50914;
 }
-
 /* 유효하지 않은 경우의 레이블 스타일 */
 .form-input.invalid + .form-input-label {
   font-size: 12px;
@@ -115,7 +110,6 @@ form{
   letter-spacing: -0.006px;
   transform: translateY(-130%);
 }
-
 /* 유효하지 않은 경우의 피드백(에러 메시지) 스타일 */
 .form-input.invalid + .feedback{
   display: block;
